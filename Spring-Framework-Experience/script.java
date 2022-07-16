@@ -4,6 +4,17 @@ class carro {
     String modelo;
     int capacidadeDoTanque;
 
+    carro() {
+
+    }
+
+    carro(String cor, String modelo, int capacidadeDoTanque) {
+        this.cor = cor;
+        this.modelo = modelo;
+        this.capacidadeDoTanque = capacidadeDoTanque;
+
+    }
+
     // constructor aqui
 
     void setCor(String cor) {
@@ -25,16 +36,18 @@ class carro {
     }
     // get e set tanque
 
-    void setCapacidadeTanque(int capacidadeDoTanque) {
+    void setCapacidadeDoTanque(int capacidadeDoTanque) {
         this.capacidadeDoTanque = capacidadeDoTanque;
 
     }
 
-    int getCapacidadeTanque (){
+    int getCapacidadeDoTanque() {
         return capacidadeDoTanque;
     }
 
     // metodo do total para encher o tanque
-    
 
+    double totalvalorTanque(double valorCombustivel) {
+        return capacidadeDoTanque * valorCombustivel;
+    }
 }
