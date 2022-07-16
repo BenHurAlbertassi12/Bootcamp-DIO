@@ -6,11 +6,13 @@ class carro {
 
     // constructor aqui
 
-    void setcor(String cor) {
+    void setCor(String cor) {
+        // "set" serve para colocar um valor em um atributo
         this.cor = cor;
     }
 
     String getcor() {
+        // retorna um valor
         return cor;
     }
 
@@ -23,6 +25,16 @@ class carro {
     }
     // get e set tanque
 
+    void setCapacidadeTanque(int capacidadeDoTanque) {
+        this.capacidadeDoTanque = capacidadeDoTanque;
+
+    }
+
+    int getCapacidadeTanque (){
+        return capacidadeDoTanque;
+    }
+
     // metodo do total para encher o tanque
+    
 
 }
