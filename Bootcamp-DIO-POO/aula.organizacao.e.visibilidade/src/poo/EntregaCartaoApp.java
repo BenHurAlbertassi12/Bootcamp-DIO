@@ -12,6 +12,10 @@ public static void main(String[] args) {
 
     Cliente cliente = new Cliente ();
 
+    try{
     cliente.adicionaEndereco(endereco);
     System.out.println("Endereco adcionado com sucesso!");
+    }catch (Exception e) {
+        System.err.println("Houve um erro ao adicionar endereco: " + e.getMessage());
+    }
 }}
