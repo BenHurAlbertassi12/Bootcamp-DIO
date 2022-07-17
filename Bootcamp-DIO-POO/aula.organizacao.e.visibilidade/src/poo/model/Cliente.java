@@ -3,13 +3,10 @@ package poo.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cliente {
-
-    public Integer codigo;
-    public String nome;
-    public String cpf;
+public class Cliente extends Pessoa{
 
     private List<Endereco> enderecos;
+    public String numCartao;
 
     public void adicionaEndereco(Endereco endereco){
         if (endereco == null){

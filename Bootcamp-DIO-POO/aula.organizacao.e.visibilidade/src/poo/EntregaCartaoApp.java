@@ -11,6 +11,7 @@ public static void main(String[] args) {
     endereco.cep = "27275130";
 
     Cliente cliente = new Cliente ();
+    
 
     try{
     cliente.adicionaEndereco(endereco);
